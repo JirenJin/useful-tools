@@ -1,0 +1,3 @@
+mogrify -resize 256x256! *
+
+time ffmpeg -i input.mp4 -fv fps=1 test/image%5d.bmp
